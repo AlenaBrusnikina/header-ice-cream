@@ -32,7 +32,7 @@ button {
 }
 
 body {
-  background-color:#84A178;;
+  background-color:#84A178;
   font-family: "Montserrat", sans-serif;
   color: #131313;
 }
@@ -50,6 +50,7 @@ a {
   padding: 0;
 }
 
+
 .container {
   min-width: 320px;
   padding-left: 15px;
@@ -64,11 +65,58 @@ a {
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    display: block;
+  }
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;  
+  color: #FCFCFC;
+}
+
 .header-container {
   display: flex;
   align-items: center;
   padding-top: 12px;
 }
+
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    padding-top: 8px;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.header-nav-item:first-child {
+  margin-left: 28px;
+}
+
 
 .header-button {
   font-weight: 600;
@@ -83,10 +131,21 @@ a {
   padding: 12px 36px;
 }
 
+.header-button-img {
+  margin-left: 4px;
+}
+
 .header-mobile-open {
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .header-mobile-open {
+    margin-right: 36px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -94,7 +153,6 @@ a {
     display: none;
   }
 }
-
 
 
 .header-mobile-menu {
@@ -161,7 +219,9 @@ a {
 
 @media screen and (min-width: 768px) {
   .header-button {
-   display: block;
+   display: flex;
+   align-items: center;
+   justify-content: center;
   }
 }
 
@@ -184,3 +244,5 @@ a {
 .mobile-link-current {
   color: #131313;
 }
+
+
