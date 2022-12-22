@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Seymour+One&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="./index.html">
+                <picture>
+                    <source srcset="./header/header-logo@1x.png 1x, ./header/header-logo@2x.png 2x" media="(min-width: 1200px)">
+                    <source srcset="./header/header-logo-tab@1x.png 1x, ./header/header-logo-tab@2x.png 2x" media="(min-width: 768px)">
+                    <source srcset="./header/header-logo-mob@1x.png 1x, ./header/header-logo-mob@2x.png 2x" media="(max-width: 767px)">
+                    <img src="./header/header-logo.png" width="60" height="65" alt="logo">
+                </picture>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav-list list">
+                    <li class="header-nav-item list"><a href="">Home</a></li>
+                    <li class="header-nav-item list"><a href="">How it’s made?</a></li>
+                    <li class="header-nav-item list"><a href="">Our products</a></li>
+                    <li class="header-nav-item list"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="header-mobile-open" type="button">
+                <svg width="32" height="32">
+                    <use href="./header/symbol-defs.svg#icon-header-menu-open"></use>
+                </svg>
+            </button>
+            <button class="header-button" type="button">
+                Buy now
+                <svg width="12" height="12">
+                    <use href="./header/symbol-defs.svg#icon-header-arrow"></use>
+                </svg>
+            </button>
+            <div class="header-mobile-menu">
+               <div class="mobile-menu-wrapper">
+                    <a href="./index.html">
+                        <picture>
+                            <source srcset="./header/header-logo-tab@1x.png 1x, ./header/header-logo-tab@2x.png 2x" media="(min-width: 768px)">
+                            <source srcset="./header/header-logo-mob@1x.png 1x, ./header/header-logo-mob@2x.png 2x" media="(max-width: 767px)">
+                            <img src="./header/logo-ice-cream.png" width="37" height="40" alt="logo">
+                        </picture>
+                    </a>
+                    <button type="button">
+                        <svg width="32" height="32">
+                            <use href="./header/symbol-defs.svg#icon-header-menu-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="header-nav-mobile">
+                    <ul class="nav-mobile-list list">
+                        <li class="nav-mobile-item">
+                            <a class="nav-mobile-link" href="">Home</a></li>
+                        <li class="nav-mobile-item">
+                            <a class="nav-mobile-link mobile-link-current" href="">How it’s made?</a></li>
+                        <li class="nav-mobile-item">
+                            <a class="nav-mobile-link" href="">Our products</a></li>
+                        <li class="nav-mobile-item">
+                            <a class="nav-mobile-link" href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="header-button" type="button">
+                    Buy now
+                    <svg width="12" height="12">
+                        <use href="./images/symbol-defs.svg#icon-header-arrow"></use>
+                    </svg>
+                </button>
+             </div>
+        </div>
+    </header>
+</body>
+</html>
