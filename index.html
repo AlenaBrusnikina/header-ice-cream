@@ -40,7 +40,7 @@
                         <a class="header-nav-link link" href="">Contact</a></li>
                 </ul>
             </nav>
-            <button class="header-mobile-open" type="button">
+            <button class="header-mobile-open" type="button" data-menu-open>
                 <svg width="32" height="32">
                     <use href="./header/symbol-defs.svg#icon-header-menu-open"></use>
                 </svg>
@@ -51,16 +51,16 @@
                     <use href="./header/symbol-defs.svg#icon-header-arrow"></use>
                 </svg>
             </button>
-            <div class="header-mobile-menu">
+            <div class="header-mobile-menu is-hidden" data-menu>
                <div class="mobile-menu-wrapper">
                     <a href="./index.html">
                         <picture>
-                            <!-- <source srcset="./header/header-logo-tab@1x.png 1x, ./header/header-logo-tab@2x.png 2x" media="(min-width: 768px)">
-                            <source srcset="./header/header-logo-mob@1x.png 1x, ./header/header-logo-mob@2x.png 2x" media="(max-width: 767px)"> -->
-                            <img src="./header/logo-ice-cream.png" width="37" height="40" alt="logo">
+                            <source srcset="./header/header-logo-tab@1x.png 1x, ./header/header-logo-tab@2x.png 2x" media="(min-width: 768px)">
+                            <source srcset="./header/header-logo-mob@1x.png 1x, ./header/header-logo-mob@2x.png 2x" media="(max-width: 767px)">
+                            <img src="./header/logo-mob@1x.png" width="37" height="40" alt="logo">
                         </picture>
                     </a>
-                    <button type="button">
+                    <button type="button" data-menu-close>
                         <svg width="32" height="32">
                             <use href="./header/symbol-defs.svg#icon-header-menu-close"></use>
                         </svg>
@@ -78,14 +78,15 @@
                             <a class="nav-mobile-link" href="">Contact</a></li>
                     </ul>
                 </nav>
-                <button class="header-button" type="button">
+                <button class="header-button " type="button">
                     Buy now
-                    <svg width="12" height="12">
-                        <use href="./images/symbol-defs.svg#icon-header-arrow"></use>
+                    <svg class="header-button-img" width="12" height="12">
+                        <use href="./header/symbol-defs.svg#icon-header-arrow"></use>
                     </svg>
                 </button>
              </div>
         </div>
     </header>
+    <script src="main.js"></script>
 </body>
 </html>
